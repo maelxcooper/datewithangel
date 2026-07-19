@@ -41,6 +41,7 @@ span {
 .date-container {
   width: min(750px, 100%);
   position: relative;
+  background: #f7ebdb;
 }
 .date-container img {
   position: absolute;
@@ -59,11 +60,17 @@ span {
   color: var(--white);
   background: var(--primary-color);
   font-size: 18px;
+  letter-spacing: 2px;
+
+  span {
+    font-weight: bold;
+  }
 }
 
 .date-content {
   padding: 0.5rem 0.8rem;
-  border: 1px #ebdede solid;
+  border: 1px #a4a4a4 solid;
+  border-radius: 0 0 4px 4px;
   box-shadow: 9px 11px 4px 0px rgba(0, 0, 0, 0.1);
   min-height: 200px;
 }
