@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Zen+Kaku+Gothic+Antique&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #424242;
+  --text-color: #f59300;
+  --white: #ffffff;
+  --window-height: clamp(25rem, calc(50vh + 5rem), 35rem);
+}
+
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+main {
+  width: min(100%, 1400px);
+  margin-inline: auto;
+  position: relative;
+}
+
+span {
+  color: var(--text-color);
+}
+
+.date-box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.date-container {
+  width: min(750px, 100%);
+  position: relative;
+}
+.date-container img {
+  position: absolute;
+  top: -12rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.date-title {
+  border: 1px var(--primary-color) solid;
+  border-radius: 6px 6px 0 0;
+  padding: 0.5rem 0.8rem;
+  color: var(--white);
+  background: var(--primary-color);
+  font-size: 18px;
+}
+
+.date-content {
+  padding: 0.5rem 0.8rem;
+  border: 1px #ebdede solid;
+  box-shadow: 9px 11px 4px 0px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+}
+
+ul.date-details {
+  text-decoration: none;
+
+  li {
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .date-content {
+    min-height: 300px;
+  }
+  ul.date-details li {
+    font-size: 16px;
+  }
+}
